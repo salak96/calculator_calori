@@ -15,7 +15,7 @@ function Form({addFood}) {
     console.log(handleSubmit);
     }
     return (
-        <div className='relative flex flex-col justify-center min-h-screen overflow-hidden '>
+        <div className='flex justify-center mt-100'>
             <div className='w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-rose-600/40 ring-2 ring-indigo-600 lg:max-w-xl'>
                 <h1 className='text-3xl font-semibold text-center text-indigo-700  uppercase decoration-wavy'>Input Calorie</h1>
                 <form className='mt-6'>
@@ -84,7 +84,7 @@ function Form({addFood}) {
               hover:bg-indigo-800
             '
                         >
-                            Add
+                            Tambahkan
                         </button>
                        
                     </div>

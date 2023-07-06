@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Header({ title }) {
     return (
-        <div className={'text-2xl bg-black text-white'}>
+        <div className={'text-2xl text-center'}>
             <h1>{title}</h1>
         </div>
     );
