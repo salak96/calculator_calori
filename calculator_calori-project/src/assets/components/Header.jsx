@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React from "react";
+import React from 'react';
 
-export default function Header ({title}) {
+export default function Header({ title }) {
     return (
-        <div className="container">
+        <div className={'text-2xl bg-black text-white'}>
             <h1>{title}</h1>
         </div>
     );
