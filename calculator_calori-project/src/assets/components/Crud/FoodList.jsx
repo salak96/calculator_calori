@@ -2,13 +2,12 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
-function FoodList({foods,DeleteFood}) {
+function FoodList({foods}) {
     return (
        <ul>
            {foods.map((food, index) => (
                <li key={index}>
                    {food.name} - {food.calories}
-                   <button onClick={() => DeleteFood(index)}>Remove</button>
                </li>
            ))}
        </ul>
