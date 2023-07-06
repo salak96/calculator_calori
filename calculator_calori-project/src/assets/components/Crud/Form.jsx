@@ -64,7 +64,6 @@ function Form({addFood}) {
               focus:ring-opacity-50
             '
                                 placeholder='Calorie'
-
                                 required
                             />
                         </label>
@@ -87,38 +86,7 @@ function Form({addFood}) {
                         >
                             Add
                         </button>
-                        <button
-                            type='Edit'
-                            className='
-              h-10
-              px-5
-              text-indigo-100
-              bg-indigo-700
-              rounded-lg
-              transition-colors
-              duration-150
-              focus:shadow-outline
-              hover:bg-indigo-800
-            '
-                        >
-                            Edit
-                        </button>
-                        <button
-                            type='Delete'
-                            className='
-              h-10
-              px-5
-              text-indigo-100
-              bg-indigo-700
-              rounded-lg
-              transition-colors
-              duration-150
-              focus:shadow-outline
-              hover:bg-indigo-800
-            '
-                        >
-                            Delete
-                        </button>
+                       
                     </div>
                     <div></div>
                 </form>

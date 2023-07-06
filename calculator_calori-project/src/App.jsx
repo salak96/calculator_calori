@@ -16,12 +16,16 @@ function App() {
     const DeleteFood = (index) => {
         setFoods(foods.filter((food, i) => i !== index));
     }
+    //edit
+    const EditFood = (index) => {
+        setFoods(foods.map((food, i) => i === index ? { ...food, editing: true } : food));
+    }
     const totalcalories = foods.reduce((total, food) => total + food.calories, 0);
     return (
         <>
             <Header title={'Calorie Calculator'} />
             <Form addFood={addFood}  />
-            <FoodList foods={foods} removeFood={DeleteFood} />
+            <FoodList foods={foods} DeleteFood={DeleteFood}  editFood={EditFood}/>
             <div className="calorie">
                 <h1>Total Calories: {totalcalories}</h1>
             </div>
